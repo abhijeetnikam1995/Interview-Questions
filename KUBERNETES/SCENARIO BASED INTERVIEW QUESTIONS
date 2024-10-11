@@ -23,6 +23,7 @@ Set a hard limit for CPU/memory to cap resources and a soft request for minimum 
 Monitor namespaces using tools like Prometheus or Kubecost to track resource consumption trends.
 
 5. Scenario: You’ve deployed an application, but it's failing due to a missing configuration file. How can you inject configuration settings into your Kubernetes pods?
+How would you store creds on Vault or AWS secre manager.
 Use ConfigMaps to inject non-sensitive configuration data such as environment variables, command-line arguments, or config files.
 Mount the ConfigMap as a volume in the pod to make the configuration available as files.
 Reference the ConfigMap in the pod’s environment variables section to use key-value pairs directly.
