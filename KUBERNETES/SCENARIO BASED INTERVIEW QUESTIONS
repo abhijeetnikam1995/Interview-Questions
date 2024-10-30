@@ -86,3 +86,4 @@ After maintenance, use kubectl uncordon <node-name> to allow the node to schedul
 15. How wold you restrict communication between pods.
 ->install Networkpolicy Agent like calico.
 Define Networkpolicy object and map that to targetted namespace or deployment using podselector-
+where we define Ingree/Egress rules
