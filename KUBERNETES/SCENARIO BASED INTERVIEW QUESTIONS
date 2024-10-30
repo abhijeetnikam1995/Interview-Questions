@@ -82,3 +82,7 @@ Use kubectl drain <node-name> to gracefully evict all running pods on the node a
 Ensure that PodDisruptionBudgets (PDB) are set for critical services, limiting how many pods can be evicted at the same time.
 Mark the node as unschedulable using kubectl cordon <node-name> before draining it to prevent new pods from being scheduled there.
 After maintenance, use kubectl uncordon <node-name> to allow the node to schedule pods again.
+
+15. How wold you restrict communication between pods.
+->install Networkpolicy Agent like calico.
+Define Networkpolicy object and map that to targetted namespace or deployment using podselector-
